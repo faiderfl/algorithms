@@ -9,3 +9,9 @@ for p in li_ordered:
 
 print(li_reverse)
 
+
+dict_list= dict((x,y) for (x,y) in li)
+print (dict_list)
+
+dict_ordered= {k:v for k, v in sorted(dict_list.items(), key=lambda item: item[0], reverse=True)}
+print(dict_ordered)

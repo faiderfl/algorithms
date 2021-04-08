@@ -12,6 +12,15 @@ def fibonacci_Iterative(n):
     return fibo[n]
 
 
+def fibonacci_Dynamic(n,memo):
+    if n in memo:
+        return memo[n]
+    else:    
+        memo[n]= fibonacci_Dynamic(n-2,memo) + fibonacci_Dynamic(n-1, memo)
+        return memo[n]
+
 if __name__ == "__main__":
     print(fibonacci_Recursive(7))
-    print(fibonacci_Itarative(7))
+    print(fibonacci_Iterative(7))
+    print(fibonacci_Dynamic(40, {0:0,1:1}))
+
