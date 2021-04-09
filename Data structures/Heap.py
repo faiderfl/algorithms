@@ -29,3 +29,15 @@ print(li)
 heapq.heappush(li,4)
 
 print(li)
+
+
+print('MaxHeap')
+MaxHeap = [-9,-1,-2,-5,-8,-6]
+# Use heapify to rearrange the elements
+heapq.heapify(MaxHeap)
+print(MaxHeap)
+
+# Add element
+#heapq.heappush(MaxHeap,-3)
+for i in MaxHeap:
+   print(-1 * i, end = ' ')
