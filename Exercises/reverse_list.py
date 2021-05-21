@@ -7,11 +7,18 @@ for p in li_ordered:
     if (p[::-1]) in li_ordered and p[::-1] not in li_reverse:
         li_reverse.append(p)
 
-print(li_reverse)
+#print(li_reverse)
+#print(li_reverse[::-1])
 
-
+#-----------------------------------------------------
+#Reverse a dictonary
 dict_list= dict((x,y) for (x,y) in li)
 print (dict_list)
 
 dict_ordered= {k:v for k, v in sorted(dict_list.items(), key=lambda item: item[0], reverse=True)}
 print(dict_ordered)
+
+
+dict((x,y) for (x,y) in list)
+
+{k,v in sorted(dict_ordered.items(), key=lambda item: item[0] reverse=True)}
