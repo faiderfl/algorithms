@@ -7,9 +7,10 @@ def reverse(string)-> str:
     Returns:
         [str]: string in reverse
     """    
-    if len(string)==1:
-        return string[0]
+    if len(string)<=1:
+        return string
     else:
         return string[len(string)-1] + reverse(string[:len(string)-1])
         
 print(reverse('Python'))
+print(reverse(''))
